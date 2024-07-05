@@ -1,10 +1,11 @@
 import * as React from 'react';
+import AssetForm from '../components/AssetForm';
 
 export default function CreateAssets() {
   return (
     <div className="Page">
       <header className="Page-header">
-        <p className="pt-5">Iroha Example DApp</p>
+        <AssetForm />
       </header>
     </div>
   );
