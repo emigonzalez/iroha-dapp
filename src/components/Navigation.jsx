@@ -6,20 +6,20 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 const Assets = () => {
   return (
     <NavDropdown title="Activos" id="collapsible-nav-dropdown">
-      <NavDropdown.Item href="/assets/create">
+      <NavDropdown.Item href="assets/create">
         Crear Activo
       </NavDropdown.Item>
-      <NavDropdown.Item href="/assets">
+      <NavDropdown.Item href="assets/info">
         Informacion de Activos
       </NavDropdown.Item>
-      <NavDropdown.Item href="/assets">
+      <NavDropdown.Item href="assets">
         Listar Activos de una cuenta
       </NavDropdown.Item>
       <NavDropdown.Divider />
-      <NavDropdown.Item href="/assets/add">
+      <NavDropdown.Item href="assets/add">
         Agregar cantidad a un Activo
       </NavDropdown.Item>
-      <NavDropdown.Item href="/assets/sub">
+      <NavDropdown.Item href="assets/sub">
         Eliminar cantidad de un Activo
       </NavDropdown.Item>
     </NavDropdown>
@@ -35,15 +35,15 @@ const Navigation = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Assets />
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            {/* <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link> */}
           </Nav>
-          <Nav>
+          {/* <Nav>
             <Nav.Link href="#deets">More deets</Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
               Dank memes
             </Nav.Link>
-          </Nav>
+          </Nav> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>
