@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { redirect } from "react-router-dom";
 
 const AssetForm = () => {
     const [assetName, setAssetName] = useState("");
@@ -23,7 +24,9 @@ const AssetForm = () => {
           })
             .then((response) => response.json())
             .then((json) => alert(`Activo Creado Correctamente: ${JSON.stringify(json)}`))
-            .then(() => setIsLoading(false));
+            .then(() => setIsLoading(false))
+            .then(() => window.location.href = "/");
+            
     }
 
     return (
